@@ -28,8 +28,8 @@
             a[bottle][i]=(count++);
         bottle--;
         for(int i=bottle;i>=top;i--)
-            a[i][right]=(count++);
-        right++;
+            a[i][left]=(count++);
+        left++;
     }
     return a;
 }
