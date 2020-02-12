@@ -12,6 +12,7 @@
 2 <= n <= 100000
 
 # 代码
+法一：
 ```
 class Solution {
 public:
@@ -27,6 +28,8 @@ public:
         return result;
     }
 };
+```
+法二：
 ```
 class Solution {
 public:
