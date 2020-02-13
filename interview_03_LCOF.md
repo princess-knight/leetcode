@@ -30,19 +30,20 @@ public:
 };
 ```
 法二：
+桶排序+抽屉原理：
 ```
 class Solution {
 public:
     int findRepeatNumber(vector<int>& nums) {
-        for(int i = 0; i < nums.size(); ++i){
-            while(nums[i] != i){
-                if(nums[i] == nums[nums[i]])
+        for(int i=0;i<nums.size();i++){
+            while(nums[i]!=i){
+                if(nums[i]==nums[nums[i]])
                     return nums[i];
                 else
                     swap(nums[i], nums[nums[i]]);
             }
         }
-    return -1;
+    return 0;
     }
 };
 ```
